@@ -189,7 +189,7 @@ const TESTIMONIALS: Testimonial[] = [
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 function AppStoreButton({ inverted = false }: { inverted?: boolean }) {
-	const bg = inverted ? "bg-white" : "bg-jam-navy";
+	const bg = inverted ? "bg-zinc border-white/20" : "bg-black";
 	const text = inverted ? "text-jam-navy" : "text-white";
 	return (
 		<a
@@ -215,7 +215,7 @@ function AppStoreButton({ inverted = false }: { inverted?: boolean }) {
 
 function GooglePlayButton({ inverted = false }: { inverted?: boolean }) {
 	const bg = inverted
-		? "bg-white/10 border border-white/20"
+		? "bg-zinc-600 border-white/20"
 		: "bg-white border border-gray-200";
 	const text = inverted ? "text-white" : "text-jam-navy";
 	return (
@@ -486,7 +486,7 @@ function FooterSection() {
 				{/* Footer bar */}
 				<div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
 					<p className="text-blue-200 text-sm">
-						© 2025 JamWatch · Built for SG–MY travellers
+						© 2026 JamWatch · Built for SG–MY travellers
 					</p>
 					<div className="flex gap-6">
 						<a
